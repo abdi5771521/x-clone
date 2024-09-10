@@ -1,0 +1,413 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background: #000000;
+    overflow-y: scroll;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.container{
+    /* display: grid;
+    grid-template-columns: 20% 80%;
+    height: 100%; */
+    position: relative;
+}
+
+.container .left, .container .col2,.container .col3{
+    border-right: 1px solid gray;
+}
+
+.container .left{
+    padding: 3px 0% 3px 2%;
+    position: fixed;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.left .upper .nav-links ol{
+    list-style-type: none;
+}
+.left .upper .nav-links ol li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+.left .upper .nav-links ol li a{
+    font-size: 25px;
+    /* font-weight: bold; */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.left .upper .nav-links ol li a i{
+    width: 40px;
+}
+.left .upper .nav-links ol li:hover{
+    background: #302f2f;
+    border-radius: 25px;
+}
+.left .upper{
+    /* border: 1px solid red; */
+}
+.left .upper .nav-links ol li a img{
+    height: 40px;
+    width: 40px;
+}
+
+/* Post Icon */
+.left .upper .post-link{
+    background: #00aaff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    width: 90%;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+.left .lower{
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 10px;
+
+}
+.left .lower .profile{
+    display: flex;
+    justify-content: flex-start;
+    
+
+}
+
+.left .lower .profile img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.profile p{
+    opacity: 0.7;
+    font-size: 17px;
+}
+.profile h3{
+    font-size: 20px;
+}
+.profile{
+    /* padding: 5px; */
+}
+.profile:hover{
+    background: #302f2f;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.container{
+    height: 1200px;
+}
+
+/* .rigth */
+.container .right{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 78%;
+    height: 100%;
+    display: flex;
+
+}
+
+.right .col1{
+    border-right: 1px solid gray;
+    height: 100%;
+    width: 65%;
+}
+
+.right .col1 .top{
+    border-bottom: 1px solid gray;
+    display: flex;
+    /* grid-template-columns: 50% 50%; */
+    position: fixed;
+    top: 0;
+    width:51%;
+    background-color: #010409;
+
+}
+.right .col1 .top div{
+    padding: 15px 0;
+    width: 50%;
+}
+.right .col1 .top div:hover{
+    background: #302f2f;
+    transition: 0.4s ease-in;
+    cursor: pointer;
+}
+.right .col1 .top div h3{
+    text-align: center;
+    
+}
+.post{
+     display: block;
+     padding: 70px 0px 10px 0px;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+    
+}
+.profile img {
+    width: 50px;height: 50px;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+.profile form input{
+    font-size: 24px;
+    font-weight: bold;
+    color: gray;
+    background: transparent;
+    border: none;
+
+}
+.post div{
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* margin: ; */
+}
+.post div ul{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0;
+    /* border-bottom: 1px solid grey; */
+}
+.post div ul li{
+    list-style-type: none;
+}
+.post div ul li i{
+    color: rgb(0, 149, 255);
+    padding: 7px;
+
+}
+.post div ul li i:hover{
+    background: #142c4a;
+    border-radius: 50%;
+}
+.post div{
+    display: flex;
+    justify-content: end;
+
+}
+.post div button{
+    display: flex;
+    flex-direction: right;
+    padding: 10px 30px;
+    color: white;
+    border-radius: 25px;
+    border: none;
+    background: rgb(10, 101, 197);
+    font-weight: bold;
+    cursor: pointer;
+}
+.post .more{
+    margin-top: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border: 1px solid gray;
+    padding: 10px 0;
+
+}
+.more a{
+    color: #00aaff;
+    
+}
+
+.feed{
+    display: flex;
+    width: 100%;
+    align-items: start;
+    padding: 0 10px;
+    border: none
+    /* padding: 3px 10px; */
+    /* justify-content: space-between; */
+}
+
+.feed .col1{
+    width: 60px;
+    display: flex;
+    justify-content: end;
+    border: none;
+}
+.feed .col1 img{
+    width: 100%;
+    border-radius: 50%;
+    border: none;
+}
+.feed .col2{
+    /* display: block; */
+    padding: 0px 20px;
+    width: 100% !important;
+    /* border: 1px solid blue; */
+}
+.feed .col2 .raw1{
+    display: flex;
+    /* width: 100%; */
+    justify-content: space-between;
+}
+
+.feed .col2 .raw1 .lef{
+    display: flex;
+    border: none;
+}
+.feed .col2 .raw1 .lef p{
+    opacity: 0.7;
+}
+.feed .col2 .raw1 .right-2{
+    display: flex;
+    list-style-type: none;
+    justify-content: end;
+    flex-direction: right;
+    border: none;
+    
+}
+
+.feed-2{
+    margin: 5px 9%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+}
+.feed-2 .video{
+    width: 100%;
+    /* display: flex;
+    justify-content: center;
+    border: 1px solid red; */
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    border: 1px solid gray;
+    border-radius: 7px;
+    height: 500px;
+}
+.video iframe{
+    width: 70%;
+
+}
+.feed-2 ul{
+    width: 100%;
+    padding: 5px 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.right .col2{
+    height: 100%;
+    width: 35%;
+
+}
+.Search{
+    display: flex;
+    align-items: center;
+    margin: 5px 15px;
+    position: fixed;
+    list-style-type: none;
+}
+.Search li{
+    /* margin-right: 15px;
+    border-radius: 50%; */
+    position: absolute;
+    left: 10px;
+}
+.Search li i{
+    font-size: 20px;
+}
+.Search form input{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(184, 183, 183);
+    background: rgb(54, 54, 54);
+    border: none;
+    height: 50px;
+    border-radius:20px;
+    padding-left: 50px;
+    
+    
+}
+.Search form input:focus{
+    outline: 1px solid rgb(8, 181, 238);
+}
+.col2 .Subscribe{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-top: 75px;
+    width: 80%;
+    padding: 10px 15px;
+    margin-left: 15px;
+
+}
+.col2 .Subscribe h3{
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 90%;
+}
+.col2 .Subscribe p{
+    font-size: 15px;
+    font-weight: lighter;
+    flex-direction:row-reverse;
+}
+.col2 .Subscribe button{
+    margin-top: 15px;
+    justify-content: center;
+    border-radius: 25px;
+    background: rgb(2, 183, 244);
+    border: none;
+    padding: 10px 20px;
+}
+.col2 .trends{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-top: 15px;
+    width: 80%;
+    padding: 10px 15px;
+    margin-left: 15px;
+}
+.col2 .trends h2{
+    padding: 10px 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.col2 .trends .column2{
+    margin-bottom: 25px;
+    
+}
+.col2 .trends .column2 div{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    opacity: 0.7;
+}
+.col2 .trends .column2 p{
+    opacity: 0.7;
+}
