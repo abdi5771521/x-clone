@@ -1,0 +1,217 @@
+.g-right{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 78%;
+    height: 100%;
+    display: flex;
+    border: 1px solid gray;
+    height: 1000rem !important;
+}
+
+.g-right .g-top-bar{
+    position: fixed;
+    top: 0;
+    width: 78%;
+    background: #000;
+    padding: 1% 2%;
+    z-index: 44;
+}
+
+.g-right .g-main-content{
+    width: 78%;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    border-right: 1px solid gray;
+}
+
+.g-right .g-main-content .g-banner{
+    background-image: url("../images/grok-bg3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.g-right .g-main-content .g-banner h4{
+    font-size: 30px;
+}
+
+.g-right .g-main-content .g-banner p{
+    font-size: 17px;
+    opacity: 0.6;
+}
+
+.g-right .g-main-content .g-banner a{
+    padding: 10px 25px;
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+    border: 0;
+    outline: none;
+    border-radius: 40px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.g-right .g-main-content .g-banner a:hover{
+    opacity: 0.7;
+    transition: 0.1s ease-in;
+}
+
+.g-right .g-main-content .g-columns{
+    padding: 20px 50px;
+}
+
+.g-right .g-main-content .g-columns .left{
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 300px;
+    width: 37%;
+
+}
+
+h3{
+    font-size: 25px;
+
+}
+
+ p{
+    opacity: 0.6;
+
+    
+}
+
+.g-right .g-main-content .g-columns .left .img-frame{
+    border: 1px solid gray;
+    border-radius: 15px;
+    padding: 2%;
+    margin-top: 20px;
+    /* -webkit-box-shadow: 2px 40px 299px -22px rgba(255,255,255,0.71);
+    -moz-box-shadow: 2px 40px 299px -22px rgba(255,255,255,0.71); */
+    box-shadow: 0px 10px 229px -50px rgba(255,255,255,0.71);
+}
+
+.g-right .g-main-content .g-columns .left .img-frame div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.g-right .g-main-content .g-columns .left .img-frame div img{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.g-right .g-main-content .g-columns .left .img-frame div p{
+    opacity: 0.8;
+}
+
+.g-right .g-main-content .g-columns .left .img-frame .full-img{
+    width: 100%;
+    height: 200px;
+
+}
+
+.g-right .g-main-content .g-columns .left .img-frame .full-img img{
+    width: 100%;
+    border-radius: 20px;
+    height: 100%;
+    /* margin: 20px 0 !important; */
+    /* border: 1px solid red; */
+
+}
+
+.g-right .g-main-content .g-columns .left .div2{
+    border: 1px solid gray;
+    padding: 2%;
+    border-radius: 25px;
+    box-shadow: 0px 10px 229px -50px rgba(255,255,255,0.71);
+}
+
+.g-right .g-main-content .g-columns .left .div2 div{
+    display: flex;
+    align-items: center;
+    
+}
+
+.g-right .g-main-content .g-columns .left .div2 div img{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.g-right .g-main-content .g-columns .left .div2 ol{
+    /* border: 1px solid red; */
+    margin: 5px;
+}
+
+.g-right .g-main-content .g-columns .left .div2 ol li{
+    margin: 5px 10px;
+    opacity: 0.9;
+}
+
+.g-right .g-main-content .g-columns .g-right2{
+    position: absolute;
+    top: 300px;
+    width: 37%;
+    left:40%;
+    /* border: 1px solid red; */
+}
+
+.g-right .g-main-content .g-columns .g-right2 .row1{
+    border: 1px solid gray;
+    padding: 2%;
+    border-radius: 25px;
+    box-shadow: 0px 10px 229px -50px rgba(255,255,255,0.71);
+}
+
+.g-right .g-main-content .g-columns .g-right2 .row1 div{
+    display: flex;
+    align-items: center;
+    
+}
+
+.g-right .g-main-content .g-columns .g-right2 .row1 div img{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.g-right .g-main-content .g-columns .g-right2 .img-frame{
+    border: 1px solid gray;
+    padding: 2%;
+    border-radius: 25px;
+    box-shadow: 0px 10px 229px -50px rgba(255,255,255,0.71);
+}
+
+.g-right .g-main-content .g-columns .g-right2 .img-frame div{
+    display: flex;
+    align-items: center;
+    
+}
+
+.g-right .g-main-content .g-columns .g-right2 .img-frame div img{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.g-right .g-main-content .g-columns .g-right2 .img-frame .full-img{
+    height: 200px;
+}
+
+.g-right .g-main-content .g-columns .g-right2 .img-frame .full-img img{
+    width: 100%;
+    border-radius: 5px;
+    height: 100%;
+}

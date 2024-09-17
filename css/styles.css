@@ -21,7 +21,7 @@ a{
 }
 
 .container .left, .container .col2,.container .col3{
-    border-right: 1px solid gray;
+    /* border-right: 1px solid gray; */
 }
 
 .container .left{
